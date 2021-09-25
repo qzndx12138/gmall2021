@@ -79,7 +79,7 @@ public class UniqueVisitApp {
 
                 StateTtlConfig ttlConfig = new StateTtlConfig.Builder(Time.days(1))
                         .setUpdateType(StateTtlConfig.UpdateType.OnCreateAndWrite)
-                        .build();       //设置状态信息保存一天，并且如果遇到相同的数据之后，保留时间一天将会被重置
+                        .build();       //设置状态信息保存一天，如果状态被更新或者创建，保留时间‘一天’将会被重置
 
                 valueStateDescriptor.enableTimeToLive(ttlConfig);
 
