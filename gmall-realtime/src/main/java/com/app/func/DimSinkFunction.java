@@ -15,6 +15,7 @@ import java.util.Collection;
 import java.util.Set;
 
 /**
+ *  将数据写入phoenix
  * @author 刘帅
  * @create 2021-09-24 12:00
  */
