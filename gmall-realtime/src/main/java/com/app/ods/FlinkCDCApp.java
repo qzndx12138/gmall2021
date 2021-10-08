@@ -36,7 +36,7 @@ public class FlinkCDCApp {
                 .databaseList("gmall-flink")            //库名
 //                .tableList("gmall-flink.base_trademark")        //表名，必须带上库名
                 .startupOptions(StartupOptions.latest())   //initial 第一次打印所有的数据，然后之后只打印增量及变化，earliest就只打印执行完程序之后新增及变化的
-                .deserializer(new MyStringDebeziumDeserializationSchema())//使用自定义的反序列化类
+                .deserializer(new MyStringDebeziumDeserializationSchema())//使用自定义的反序列化类（自定义解析器）
                 .build();
         DataStreamSource<String> dataStreamSource = env.addSource(sourceFunction);
 

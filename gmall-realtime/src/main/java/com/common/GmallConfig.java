@@ -15,4 +15,9 @@ public class GmallConfig {
 
     //Phoenix连接参数
     public static final String PHOENIX_SERVER = "jdbc:phoenix:CJhadoop102,CJhadoop103,CJhadoop104:2181";
+
+    public static final String CLICKHOUSE_URL="jdbc:clickhouse://CJhadoop102:8123/default";
+
+    public static final String CLICKHOUSE_DRIVER = "ru.yandex.clickhouse.ClickHouseDriver";
+
 }

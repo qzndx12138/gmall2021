@@ -12,6 +12,7 @@ import org.apache.kafka.connect.data.Struct;
 import org.apache.kafka.connect.source.SourceRecord;
 
 /**
+ * 自定义解析器，将数据解析为json格式
  * @author 刘帅
  * @create 2021-09-22 20:02
  */

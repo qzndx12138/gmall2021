@@ -71,9 +71,13 @@ public class JdbcUtil {
         long start = System.currentTimeMillis();
         List<JSONObject> list = queryList(connection, "select * from GMALL210325_REALTIME.DIM_BASE_TRADEMARK", JSONObject.class, true);
         long end = System.currentTimeMillis();
+        List<JSONObject> list1 = queryList(connection, "select * from GMALL210325_REALTIME.DIM_BASE_TRADEMARK", JSONObject.class, true);
+        long end2 = System.currentTimeMillis();
 
-        System.out.println(end - start);  //195 211
+        System.out.println(end - start);  //195 211 188
+        System.out.println(end2 - end);   //13  15
         System.out.println(list);
+        System.out.println(list1);
 
     }
 
